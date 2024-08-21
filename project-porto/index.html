@@ -3,25 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>khanee</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav li a {
+        text-decoration: none;
+        color: #000;
+        padding: 20px;
+      }
+      .cart article {
+        text-align: center;
+        margin: 0 5%;
+        padding: 20px 3vh;
+        width: 25%;
+      }
+      .cart article h3 {
+        padding-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <!--  START HEADER  -->
     <header>
       <!--  START NAV -->
-      <nav>
-        <ul style="list-style: none;">
-          <li><a href=#p>Profile</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+      <nav
+        style="
+          position: fixed;
+          background: white;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          height: 5vh;
+          border: 1px solid black;
+          align-items: center;
+        "
+      >
+        <ul style="list-style: none; display: flex">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!--  END NAV -->
       <!--  START SECTION PROFILE -->
-      <section id="profile">
-        <img src="https://placehold.co/400x400" alt="profile-img" />
-        <h1>Muhammad Zidane Khoir Rizky</h1>
+      <section
+        id="profile"
+        style="text-align: center; height: 95vh; padding: 25vh"
+      >
+        <img
+          src="https://placehold.co/400x400"
+          alt="profile-img"
+          style="width: 200px; height: 200px; border-radius: 50%"
+        />
+        <h1 style="padding: 10px">Muhammad Zidane Khoir Rizky</h1>
         <p>Student</p>
       </section>
       <!--  END SECTION PROFILE -->
@@ -31,44 +70,59 @@
     <!--  START MAIN  -->
     <main>
       <!--  START SECTION ABOUT -->
-      <section id="about">
-        <h2>About</h2>
+      <section
+        id="about"
+        style="
+          display: inline-table;
+          align-items: center;
+          text-align: center;
+          margin: 10vh 35%;
+          padding-bottom: 10vh;
+          width: 30%;
+        "
+      >
+        <h2 style="padding-bottom: 10px">About</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-          fuga, minima odio assumenda quam quisquam?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat
+          repellendus magnam tempore impedit est, voluptatem fugit quod
+          repudiandae similique dicta, quos modi odit quo, assumenda voluptas
+          possimus obcaecati repellat debitis nostrum rerum et voluptates culpa
+          maxime. Sit, modi omnis?
         </p>
       </section>
       <!--  END SECTION ABOUT -->
       <!-- START SECTION BLOG -->
       <section id="blog">
-        <h2>Blog</h2>
-        <article>
-          <h3>Post Title1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex
-            molestias sunt excepturi a error! Rem quibusdam doloribus iure,
-            error temporibus dolor cum molestiae, deleniti eaque, eius ab
-            incidunt in!
-          </p>
-        </article>
-        <article>
-          <h3>Post Title2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex
-            molestias sunt excepturi a error! Rem quibusdam doloribus iure,
-            error temporibus dolor cum molestiae, deleniti eaque, eius ab
-            incidunt in!
-          </p>
-        </article>
-        <article>
-          <h3>Post Title3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex
-            molestias sunt excepturi a error! Rem quibusdam doloribus iure,
-            error temporibus dolor cum molestiae, deleniti eaque, eius ab
-            incidunt in!
-          </p>
-        </article>
+        <h2 style="text-align: center">Blog</h2>
+        <div class="cart" style="display: flex; padding: 20px 0">
+          <article>
+            <h3>Post Title1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex
+              molestias sunt excepturi a error! Rem quibusdam doloribus iure,
+              error temporibus dolor cum molestiae, deleniti eaque, eius ab
+              incidunt in!
+            </p>
+          </article>
+          <article>
+            <h3>Post Title2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex
+              molestias sunt excepturi a error! Rem quibusdam doloribus iure,
+              error temporibus dolor cum molestiae, deleniti eaque, eius ab
+              incidunt in!
+            </p>
+          </article>
+          <article>
+            <h3>Post Title3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex
+              molestias sunt excepturi a error! Rem quibusdam doloribus iure,
+              error temporibus dolor cum molestiae, deleniti eaque, eius ab
+              incidunt in!
+            </p>
+          </article>
+        </div>
       </section>
       <!-- END SECTION BLOG -->
       <!--  START SECTION CONTACT -->
@@ -79,19 +133,19 @@
           <p>Addrees: Jl. Timbul Raya</p>
         </div>
         <form>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="email">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="email" />
           <textarea></textarea>
-          <input type="button" value="submit">
+          <input type="button" value="submit" />
         </form>
       </section>
       <!--  END SECTION CONTACT -->
     </main>
     <!--  END MAIN  -->
-    <!--  START FOOTER  -->  
+    <!--  START FOOTER  -->
     <footer>
       <p>&copy: 2024 DaniKhoirR</p>
     </footer>
-    <!--  END FOOTER  -->  
+    <!--  END FOOTER  -->
   </body>
 </html>
